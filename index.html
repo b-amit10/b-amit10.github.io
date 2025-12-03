@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Amit Bhattarai | AI/ML Engineer & Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #0f172a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e5e7eb;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    header {
+      display: flex; flex-direction: column; gap: 1rem;
+      padding: 2.5rem 0 1.5rem; border-bottom: 1px solid rgba(148,163,184,0.4);
+    }
+    @media (min-width: 768px) {
+      header { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .name-role h1 { font-size: 2.2rem; font-weight: 700; }
+    .name-role p { font-size: 1rem; color: #9ca3af; }
+    .contact { font-size: 0.95rem; color: #d1d5db; }
+    .contact div { margin-bottom: 0.25rem; }
+    main { padding: 1.5rem 0 3rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 600;
+      color: #f9fafb; border-bottom: 1px solid rgba(148,163,184,0.4); padding-bottom: 0.25rem;
+    }
+    .section-content { margin-top: 0.75rem; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .pill {
+      padding: 0.3rem 0.75rem; border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.5);
+      font-size: 0.85rem; color: #e5e7eb; background: rgba(15,23,42,0.7);
+    }
+    .two-column { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    @media (min-width: 768px) {
+      .two-column { grid-template-columns: 2fr 1.3fr; }
+    }
+    .project {
+      margin-bottom: 1.25rem; padding: 1rem; border-radius: 0.75rem;
+      background: rgba(15,23,42,0.8); border: 1px solid rgba(148,163,184,0.4);
+    }
+    .project-title {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 0.5rem; margin-bottom: 0.25rem;
+    }
+    .project-title h3 { font-size: 1.05rem; font-weight: 600; }
+    .project .meta { font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.4rem; }
+    .project ul { margin-left: 1.1rem; margin-top: 0.4rem; font-size: 0.9rem; }
+    .project ul li { margin-bottom: 0.2rem; }
+    .edu-item { margin-bottom: 1rem; }
+    .edu-header { display: flex; justify-content: space-between; font-size: 0.95rem; color: #d1d5db; }
+    .edu-degree { font-weight: 600; font-size: 1rem; }
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.4);
+      padding: 1rem 0 2rem; font-size: 0.85rem; text-align: center; color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="name-role">
+        <h1>Amit Bhattarai</h1>
+        <p>AI/ML Engineer • Data Analyst</p>
+      </div>
+      <div class="contact">
+        <div>📍 Great Mills, MD 20775</div>
+        <div>📞 <a href="tel:+12404318727">+1 (240) 431-8727</a></div>
+        <div>✉️ <a href="mailto:amit7111019@gmail.com">amit7111019@gmail.com</a></div>
+        <!-- Add later:
+        <div>GitHub: <a href="https://github.com/b-amit10" target="_blank">github.com/b-amit10</a></div>
+        <div>LinkedIn: <a href="#" target="_blank">linkedin.com/in/your-handle</a></div>
+        -->
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About</h2>
+        <div class="section-content">
+          <p>
+            I’m an aspiring <strong>AI/ML Engineer</strong> and <strong>Data Analyst</strong> with a strong foundation in
+            Python, Java, R, and SQL. I’m currently pursuing a Bachelor’s in Computer Science at
+            <strong>Morgan State University</strong> (GPA 4.0), building projects in machine learning, NLP, predictive modeling,
+            and data visualization. My goal is to apply data and AI to solve real-world problems in education, sports,
+            and creative industries.
+          </p>
+        </div>
+      </section>
+
+      <div class="two-column">
+        <!-- LEFT: PROJECTS -->
+        <div>
+          <section id="projects">
+            <h2>Projects</h2>
+            <div class="section-content">
+
+              <div class="project">
+                <div class="project-title">
+                  <h3>Spotify Data Analysis & Recommendation System</h3>
+                  <span class="pill">2025</span>
+                </div>
+                <div class="meta">Python • Spotipy API • Pandas • Scikit-Learn</div>
+                <ul>
+                  <li>Analyzed listening patterns using Spotify Web API and audio features (energy, valence, tempo).</li>
+                  <li>Clustered tracks into mood categories using KMeans and visualized trends.</li>
+                  <li>Built a content-based recommendation system using cosine similarity on normalized audio features.</li>
+                </ul>
+              </div>
+
+              <div class="project">
+                <div class="project-title">
+                  <h3>Soccer Player Performance Prediction Model</h3>
+                  <span class="pill">2025</span>
+                </div>
+                <div class="meta">Python • Regression Models • Feature Engineering</div>
+                <ul>
+                  <li>Analyzed player statistics from public soccer datasets to predict performance ratings.</li>
+                  <li>Engineered per-90 metrics and role-specific features to better compare players.</li>
+                  <li>Built regression models and created visualizations highlighting differences between elite and average players.</li>
+                </ul>
+              </div>
+
+              <div class="project">
+                <div class="project-title">
+                  <h3>Student Performance Predictor Model</h3>
+                  <span class="pill">2025</span>
+                </div>
+                <div class="meta">Python • Scikit-Learn • EDA</div>
+                <ul>
+                  <li>Used the UCI Student Performance dataset to predict academic outcomes.</li>
+                  <li>Performed EDA, data cleaning, and feature engineering for behavioral and demographic variables.</li>
+                  <li>Trained and evaluated models (Logistic Regression, Random Forest) using accuracy and F1-score.</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <!-- RIGHT: SKILLS, EDUCATION, CERTS -->
+        <div>
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="section-content">
+              <p><strong>Programming Languages</strong></p>
+              <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">Java</span>
+                <span class="pill">R</span>
+                <span class="pill">SQL</span>
+                <span class="pill">Scala</span>
+                <span class="pill">JavaScript</span>
+              </div>
+
+              <p style="margin-top: 0.75rem;"><strong>AI / Machine Learning</strong></p>
+              <div class="pill-row">
+                <span class="pill">Scikit-Learn</span>
+                <span class="pill">NLP</span>
+                <span class="pill">Regression & Classification</span>
+                <span class="pill">Feature Engineering</span>
+                <span class="pill">EDA</span>
+                <span class="pill">Recommender Systems</span>
+              </div>
+
+              <p style="margin-top: 0.75rem;"><strong>Tools & Platforms</strong></p>
+              <div class="pill-row">
+                <span class="pill">Jupyter Notebook</span>
+                <span class="pill">Git & GitHub</span>
+                <span class="pill">Docker</span>
+                <span class="pill">AWS</span>
+                <span class="pill">Power BI</span>
+                <span class="pill">MS Excel</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <div class="section-content">
+              <div class="edu-item">
+                <div class="edu-header">
+                  <span class="edu-degree">B.S. in Computer Science</span>
+                  <span>2024 – 2027</span>
+                </div>
+                <div>Morgan State University — Baltimore, MD</div>
+                <div style="font-size: 0.9rem; color: #9ca3af; margin-top: 0.25rem;">
+                  GPA: 4.0 • Dean’s List • Tau Sigma Honor Society • Recognition for Extended Research Paper
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-header">
+                  <span class="edu-degree">A.S. in Computer Science</span>
+                  <span>2023 – 2024</span>
+                </div>
+                <div>College of Southern Maryland</div>
+                <div style="font-size: 0.9rem; color: #9ca3af; margin-top: 0.25rem;">
+                  GPA: 4.0 • Dean’s List • Varsity Soccer Team
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="section-content">
+              <ul style="list-style: disc; margin-left: 1.2rem; font-size: 0.9rem;">
+                <li>Google AI Essentials — Google / Coursera (2025)</li>
+                <li>Prompt Engineering Certificate — Google / Coursera (2025)</li>
+                <li>IBM Data Science Professional Certificate (courses in progress) — Coursera (2025)</li>
+                <li>AWS Cloud Practitioner — AWS (2025)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Amit Bhattarai · Built with HTML &amp; CSS
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
