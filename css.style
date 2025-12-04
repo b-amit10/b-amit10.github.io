@@ -1,0 +1,28 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keeps footer at bottom */
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Simple placeholder for profile pic on About page */
+.profile-pic-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: inline-block;
+}
+
+/* Optional: tweak card spacing */
+.card {
+  border-radius: 0.75rem;
+}
