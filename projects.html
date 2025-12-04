@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Amit Bhattarai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar (same as index) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Amit Bhattarai</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiences.html">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <header class="mb-4">
+      <h1 class="h3">Projects</h1>
+      <p class="text-muted">A glimpse of what I've built so far.</p>
+    </header>
+
+    <h2 class="h5 mt-4 mb-3">Featured</h2>
+    <div class="row g-4">
+      <!-- Project 1: ML Student Performance -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Student Performance Prediction</h3>
+            <p class="card-subtitle mb-2 text-muted">Machine Learning · Python · scikit-learn</p>
+            <p class="card-text">
+              A group project focused on predicting student academic performance using
+              real-world tabular data. Implemented and compared models such as Logistic
+              Regression, k-NN, and Decision Trees, with emphasis on interpretability,
+              feature importance, and ethical use of educational data.
+            </p>
+            <!-- Optional: link to GitHub repo -->
+            <!-- <a href="https://github.com/..." class="card-link">View on GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: COSC 352 pipeline -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Homicide Data Processing Pipeline (COSC 352)</h3>
+            <p class="card-subtitle mb-2 text-muted">Python · Docker · Scala · Go · R · Clojure</p>
+            <p class="card-text">
+              A multi-stage data analysis pipeline spanning several projects. It ingests
+              homicide datasets, cleans and transforms the data, and performs statistical
+              and exploratory analysis using different programming languages and containerized
+              environments. Emphasis on reproducibility, version control, and modular design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Smart Library -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Smart Library Management System</h3>
+            <p class="card-subtitle mb-2 text-muted">Java · OOP · UML</p>
+            <p class="card-text">
+              A Java-based system that models a smart library, including books, members,
+              borrowing, and returns. Designed using UML class diagrams with aggregation,
+              composition, and inheritance relationships to reflect real-world interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: JavaFX Restaurant Bill -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Restaurant Bill Calculator</h3>
+            <p class="card-subtitle mb-2 text-muted">JavaFX · GUI · Event-Driven Programming</p>
+            <p class="card-text">
+              A graphical desktop application that allows users to select menu items,
+              calculate totals, apply tip percentages with proper decimal formatting, and
+              display the final bill. Built to practice JavaFX layout management and UI logic.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Multithreaded Producer-Consumer -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Multithreaded Producer–Consumer Simulation</h3>
+            <p class="card-subtitle mb-2 text-muted">Java · Concurrency · Synchronization</p>
+            <p class="card-text">
+              A bonus assignment implementing the producer–consumer pattern using Java
+              threads, synchronized methods, and shared buffers. Demonstrates concurrency
+              control, race condition prevention, and thread coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Search Algorithms & Hash Tables -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Search & Hashing Algorithms Playground</h3>
+            <p class="card-subtitle mb-2 text-muted">Python · Algorithms · Data Structures</p>
+            <p class="card-text">
+              Implemented and compared linear search, binary search, and hash tables with
+              linear probing on custom datasets, including a gym shopping list. Focused on
+              time complexity, correctness, and clear visual/printed output for learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <h2 class="h5 mb-3">Cybersecurity & Ethics Work</h2>
+    <p>
+      In addition to coding projects, I have completed multiple assignments on cybersecurity
+      incidents (such as large-scale network and resource attacks) and AI ethics, exploring
+      topics like behavioral ethics, role morality, and the responsible use of AI in
+      military and societal contexts.
+    </p>
+  </main>
+
+  <footer class="bg-light py-3 mt-auto">
+    <div class="container text-center small text-muted">
+      © <span id="year"></span> Amit Bhattarai.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
