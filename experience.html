@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experiences | Amit Bhattarai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Amit Bhattarai</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="experiences.html">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <header class="mb-4">
+      <h1 class="h3">Experiences</h1>
+      <p class="text-muted">Academic, technical, and extracurricular experiences that shape my journey.</p>
+    </header>
+
+    <!-- Experience 1: ML Course / Project -->
+    <section class="mb-5">
+      <h2 class="h5">Machine Learning Coursework & Research-Style Project</h2>
+      <p class="text-muted mb-1">Morgan State University · COSC 470</p>
+      <p class="text-muted">2024 – Present</p>
+      <ul>
+        <li>Implemented multiple ML models on real educational datasets to predict student outcomes.</li>
+        <li>Compared performance using metrics such as accuracy, precision/recall, confusion matrices, and ROC curves.</li>
+        <li>Explored trade-offs between interpretability and predictive performance.</li>
+      </ul>
+    </section>
+
+    <!-- Experience 2: Systems / Data Pipeline Course -->
+    <section class="mb-5">
+      <h2 class="h5">Data Pipelines & Multi-Language Programming</h2>
+      <p class="text-muted mb-1">Morgan State University · COSC 352</p>
+      <p class="text-muted">2024 – Present</p>
+      <ul>
+        <li>Built an end-to-end pipeline to analyze homicide data using Python, Scala, Go, R, and Clojure.</li>
+        <li>Containerized projects using Docker and maintained version control using Git and GitHub.</li>
+        <li>Emphasized clean code, modular design, and clear documentation for each project stage.</li>
+      </ul>
+    </section>
+
+    <!-- Experience 3: Cybersecurity Coursework -->
+    <section class="mb-5">
+      <h2 class="h5">Cybersecurity & Network Defense Coursework</h2>
+      <p class="text-muted mb-1">Morgan State University</p>
+      <p class="text-muted">2024 – Present</p>
+      <ul>
+        <li>Researched and analyzed recent network and resource attacks, summarizing key lessons learned.</li>
+        <li>Practiced foundational security concepts, including the CIA triad, threat modeling, and secure configurations.</li>
+        <li>Prepared for the CompTIA Security+ certification to strengthen core security knowledge.</li>
+      </ul>
+    </section>
+
+    <!-- Experience 4: Leadership / Extracurricular -->
+    <section class="mb-5">
+      <h2 class="h5">Leadership & Extracurriculars</h2>
+      <p class="text-muted mb-1">Soccer, music, and community</p>
+      <ul>
+        <li>Active soccer player and team contributor, learning teamwork, communication, and resilience.</li>
+        <li>Write and perform rap/hip-hop music, developing storytelling skills and creative discipline.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-light py-3 mt-auto">
+    <div class="container text-center small text-muted">
+      © <span id="year"></span> Amit Bhattarai.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
