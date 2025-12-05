@@ -1,105 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
-  <title>Amit Bhattarai</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Bhattarai | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Amit Bhattarai</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="experiences.html">Experiences</a></li>
-          <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Amit<span>Bhattarai</span></div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="awards.html">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero / About -->
-  <main class="container py-5">
-    <section class="row align-items-center">
-      <div class="col-md-4 text-center mb-4 mb-md-0">
-        <!-- Replace with your own picture later -->
-        <div class="profile-pic-placeholder mb-3"></div>
-        <h1 class="h3 fw-bold mb-0">Amit Bhattarai</h1>
-        <p class="text-muted">Baltimore, MD · Computer Science @ Morgan State University</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <img src="hero.jpg" alt="Amit Bhattarai" class="hero-pic" />
+          <h1>Amit Bhattarai</h1>
+          <p class="subtitle">Computer Science @ Morgan State · AI/ML & Data-Focused Software Engineer</p>
+          <p class="location">Baltimore, MD · Open to internships (Summer 2026)</p>
+
+          <div class="hero-actions">
+            <a href="Amit_Bhattarai_Resume.pdf" class="btn primary">View Resume</a>
+            <a href="projects.html" class="btn secondary">View Projects</a>
+            <a href="https://github.com/b-amit10" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <h2>About Me</h2>
+          <p>
+            I’m a junior Computer Science major at Morgan State University with a strong focus on
+            software engineering, machine learning, and data-driven systems. I like taking projects
+            from idea to deployment — cleaning and transforming data, building and evaluating models,
+            and packaging everything in reproducible environments using Git, Docker, and modern tooling.
+          </p>
+          <p>
+            Recently I’ve been working on models for student performance prediction, Spotify listening
+            analysis, and soccer player performance. I’ve also built a multi-language homicide data
+            analysis pipeline (Python, Scala, Go, R, Clojure) and a Smart Library Management System
+            in Java using OOP and UML.
+          </p>
+
+          <div class="skills-grid">
+            <div>
+              <h3>Languages</h3>
+              <p>Python, Java, Scala, Go, R, C, Clojure, Bash</p>
+            </div>
+            <div>
+              <h3>ML & Data</h3>
+              <p>scikit-learn, pandas, NumPy, Matplotlib, model evaluation</p>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <p>Git & GitHub, Docker, Linux, VS Code, Jupyter</p>
+            </div>
+            <div>
+              <h3>Concepts</h3>
+              <p>OOP, search algorithms, hashing, multithreading, basic cybersecurity</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h2 class="h4 mb-3">About Me</h2>
-        <p>
-          I am a junior Computer Science major at Morgan State University with a strong
-          interest in software engineering, machine learning, and cybersecurity.
-        </p>
-        <p>
-          I love building data-driven systems end-to-end—from cleaning and transforming data,
-          to training models, to deploying code in reproducible environments using tools like
-          Git, Docker, and cloud platforms.
-        </p>
-        <p>
-          Outside of academics, I enjoy playing soccer, exploring hip-hop/rap as a creative outlet,
-          and constantly learning new technologies through side projects and coursework.
-        </p>
+    </section>
 
-        <h3 class="h5 mt-4">Current Focus</h3>
-        <ul>
-          <li>Machine learning projects on student performance and tabular datasets</li>
-          <li>Full-stack development with Java, Python, and web technologies</li>
-          <li>Secure software practices and foundational cybersecurity concepts</li>
+    <!-- Featured Projects -->
+    <section class="section" id="featured-projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <a href="projects.html" class="section-link">View all projects →</a>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Student Performance Predictor</h3>
+            <p class="card-tagline">ML model to predict academic performance from real student data.</p>
+            <p><strong>Tech:</strong> Python, pandas, scikit-learn, Matplotlib</p>
+            <ul>
+              <li>Engineered features from attendance, study time, and prior grades.</li>
+              <li>Trained and compared logistic regression, k-NN, and decision tree models.</li>
+              <li>Used accuracy, confusion matrices, and ROC curves to pick the best model.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Spotify Listening Analysis & Recommender</h3>
+            <p class="card-tagline">Exploring listening patterns and recommending songs using audio features.</p>
+            <p><strong>Tech:</strong> Python, pandas, scikit-learn</p>
+            <ul>
+              <li>Analyzed track features (tempo, energy, valence) to find patterns.</li>
+              <li>Built similarity-based recommendations using audio feature vectors.</li>
+              <li>Created visualizations and summaries for non-technical users.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Soccer Player Performance Prediction</h3>
+            <p class="card-tagline">Combining my love for soccer with machine learning on player stats.</p>
+            <p><strong>Tech:</strong> Python, scikit-learn</p>
+            <ul>
+              <li>Used match-level statistics (goals, assists, shots, minutes played).</li>
+              <li>Modeled future performance and highlighted underrated players.</li>
+              <li>Visualized insights to explain model behavior to coaches and friends.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soccer / Life section with images -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Beyond the Code</h2>
+          <p>Soccer, nature, and curiosity keep me balanced.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="soccer.jpg" alt="Amit playing soccer" />
+            <figcaption>Competitive soccer keeps me sharp on and off the field.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="mountains.jpg" alt="Amit looking at mountains at sunrise" />
+            <figcaption>I like hiking and reflecting on long-term goals.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="snake.jpg" alt="Amit holding a snake" />
+            <figcaption>I’m not afraid to try new things—even when they look risky.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences summary -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experiences</h2>
+          <a href="experiences.html" class="section-link">View more →</a>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Computer Science Student · Morgan State University</h3>
+            <p class="card-tagline">Coursework + projects in AI/ML, software engineering, and cybersecurity.</p>
+            <ul>
+              <li>Implemented data structures, algorithms, and search techniques in multiple languages.</li>
+              <li>Built end-to-end ML and data projects, from data ingestion to evaluation.</li>
+              <li>Used GitHub and Docker to manage and share multi-language projects.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Leadership & Campus Involvement</h3>
+            <p class="card-tagline">Balancing academics, athletics, and mentorship.</p>
+            <ul>
+              <li>FROG (Freshman Recruit Orientation Group) leader, helping new students transition to college.</li>
+              <li>Competitive soccer player and team leader, maintaining a strong GPA alongside athletics.</li>
+              <li>Active in personal projects in AI/ML, data analysis, and creative writing/rap.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards summary -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Awards & Honors</h2>
+          <a href="awards.html" class="section-link">View all honors →</a>
+        </div>
+
+        <ul class="simple-list">
+          <li>Dean’s List, Morgan State University (multiple semesters).</li>
+          <li>Tau Sigma National Honor Society (for transfer students).</li>
+          <li>4.0 GPA (current).</li>
         </ul>
       </div>
     </section>
 
-    <hr class="my-5" />
-
-    <section>
-      <h2 class="h4 mb-3">Highlights</h2>
-      <ul>
-        <li>Ongoing Machine Learning project: predicting academic performance using real student data</li>
-        <li>Multi-language data processing pipeline (Python, Scala, Go, R, Clojure) for homicide analysis</li>
-        <li>Smart Library Management System built in Java with OOP and UML design</li>
-        <li>Hands-on cybersecurity coursework analyzing recent network and resource attacks</li>
-      </ul>
-    </section>
-
-    <hr class="my-5" />
-
-    <section>
-      <p class="fst-italic">
-        “Study, build, and iterate — one project at a time.”
-      </p>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you’d like to talk about internships, research, or collaborations, feel free to reach out.</p>
+        <ul class="simple-list">
+          <li>Email: <a href="mailto:your_email@domain.com">your_email@domain.com</a></li>
+          <li>GitHub: <a href="https://github.com/b-amit10" target="_blank" rel="noopener">github.com/b-amit10</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-light py-3 mt-auto">
-    <div class="container text-center small text-muted">
-      © <span id="year"></span> Amit Bhattarai.
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Amit Bhattarai. Built with code, caffeine, and curiosity.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
